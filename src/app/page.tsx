@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import CursorSpotlight from "@/components/cursor-spotlight";
+import Experience from "@/components/experience";
 
 export default function Home() {
   return (
@@ -57,73 +58,7 @@ export default function Home() {
               </div>
             </section>
 
-            <section id="experience" className="scroll-mt-16 lg:scroll-mt-24">
-              <div className="space-y-4">
-                <h2 className="text-sm font-bold uppercase tracking-widest text-[#00d1c7]">
-                  Experience
-                </h2>
-                <p className="text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque ipsa fugiat, esse dolor quibusdam ad officia ab,
-                  nisi praesentium officiis, nihil nobis autem laudantium eius
-                  repellendus.
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <p className="text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque ipsa fugiat, esse dolor quibusdam ad officia ab,
-                  nisi praesentium officiis, nihil nobis autem laudantium eius
-                  repellendus.
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <p className="text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque ipsa fugiat, esse dolor quibusdam ad officia ab,
-                  nisi praesentium officiis, nihil nobis autem laudantium eius
-                  repellendus.
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-              </div>
-            </section>
+            <Experience />
 
             <section id="projects" className="scroll-mt-16 lg:scroll-mt-24">
               <div className="space-y-4">
