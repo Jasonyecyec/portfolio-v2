@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import CursorSpotlight from "@/components/cursor-spotlight";
 import Experience from "@/components/experience";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
@@ -12,51 +13,21 @@ export default function Home() {
           <Header />
 
           <main className="pt-20 lg:w-[52%] lg:py-24 space-y-16 md:space-y-24 lg:space-y-36">
-            <section id="about" className="scroll-mt-16  lg:scroll-mt-24">
+            <section id="about" className="scroll-mt-16 lg:scroll-mt-24">
               <div className="space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
                   About
                 </h2>
-                <p className="text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque ipsa fugiat, esse dolor quibusdam ad officia ab,
-                  nisi praesentium officiis, nihil nobis autem laudantium eius
-                  repellendus.
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
+                <p className="text-slate-400 font-medium tracking-normal leading-relaxed">
+                  Experienced Software Developer with a proven ability to lead
+                  development projects and collaborate effectively within a
+                  team. Eager to contribute and grow in a dynamic environment,
+                  continuously learning and mastering new technologies.
                 </p>
               </div>
             </section>
 
-            <section id="skills" className="scroll-mt-16 lg:scroll-mt-24">
-              <div className="space-y-4">
-                <h2 className="text-sm font-bold uppercase tracking-widest text-[#00d1c7]">
-                  Skills
-                </h2>
-                <p className="text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque ipsa fugiat, esse dolor quibusdam ad officia ab,
-                  nisi praesentium officiis, nihil nobis autem laudantium eius
-                  repellendus.
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-              </div>
-            </section>
+            <Skills />
 
             <Experience />
 

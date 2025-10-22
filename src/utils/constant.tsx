@@ -1,3 +1,12 @@
+import { SiTypescript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaLaravel } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
+import { FaDocker } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+
 export const navLinks = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
@@ -78,5 +87,72 @@ export const socialLinks = [
         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
       </svg>
     ),
+  },
+];
+
+export const experience = [
+  {
+    date: "APRIL 2025 - Present",
+    position: "Software Engineer",
+    company: "Smart Contents Co., Ltd.",
+    details: [
+      "Build client-facing and internal web applications, ensuring responsive and efficient UI/UX.",
+      "Collaborated closely with developers and cross-functional teams to ensure seamless API integration and on-time feature delivery.",
+    ],
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "Docker",
+    ],
+  },
+  {
+    date: "AUG 2024 - FEB 2025",
+    position: "IT Software Developer",
+    company: "Radiowealth Finance Company Inc.",
+    details: [
+      "Developed and maintained scalable code for internal system, adding new modules and fixing bugs.",
+      "Revamped a Loan Application Admin System using Laravel and Vue.",
+      "Configured and deployed web application on IIS Servers (UAT and Production environments).",
+      "ETL Developer – Create and optimized reports using SQL scripts, Excel templates and PL/SQL functions to support data integration, reporting and financial reports presentation.",
+    ],
+    technologies: ["Laravel", "Vue.js", "JavaScript", "SQL", "AWS"],
+  },
+];
+
+export const skills = [
+  {
+    name: "TypeScript",
+    icon: <SiTypescript />,
+  },
+  {
+    name: "React",
+    icon: <FaReact />,
+  },
+  {
+    name: "Next.js",
+    icon: <RiNextjsFill />,
+  },
+  {
+    name: "Laravel",
+    icon: <FaLaravel />,
+  },
+  {
+    name: "MySQL",
+    icon: <GrMysql />,
+  },
+  {
+    name: "Docker",
+    icon: <FaDocker />,
+  },
+  {
+    name: "Git",
+    icon: <FaGitAlt />,
+  },
+  {
+    name: "AWS",
+    icon: <FaAws />,
   },
 ];
