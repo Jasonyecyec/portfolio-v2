@@ -14,19 +14,16 @@ export default function Header() {
 
     const observerOptions = {
       root: null,
-      // Shrink detection zone: trigger when section crosses 20% from top
-      rootMargin: "-20% 0px -70% 0px", // Detection zone: 20%-34% from top (14% band)
+      rootMargin: "-20% 0px -70% 0px",
       threshold: 0,
     };
 
     const observer = new IntersectionObserver((entries) => {
-      // Filter only intersecting entries
       const intersectingEntries = entries.filter(
         (entry) => entry.isIntersecting,
       );
 
       if (intersectingEntries.length > 0) {
-        // Find the section that appears highest on the page
         const topMostEntry = intersectingEntries.reduce((highest, entry) => {
           return entry.boundingClientRect.top < highest.boundingClientRect.top
             ? entry
@@ -66,10 +63,8 @@ export default function Header() {
 
   return (
     <>
-      {/* Debug Overlay - Shows the detection zone */}
       {showDebugOverlay && (
         <div className="fixed inset-0 pointer-events-none z-50">
-          {/* Top Buffer - No Detection */}
           <div className="h-[20%] bg-slate-500/10 border-b-2 border-slate-500">
             <div className="flex items-center justify-center h-full">
               <span className="text-slate-400 font-bold text-sm bg-black/50 px-3 py-1 rounded">
@@ -78,16 +73,14 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Detection Zone - Active trigger area */}
           <div className="h-[10%] bg-green-500/30 border-y-4 border-green-500">
             <div className="flex items-center justify-center h-full">
               <span className="text-green-500 font-bold text-lg bg-black/50 px-4 py-2 rounded">
-                ⚡ TRIGGER ZONE (20%-30%)
+                TRIGGER ZONE (20%-30%)
               </span>
             </div>
           </div>
 
-          {/* Bottom - No Detection */}
           <div className="h-[70%] bg-red-500/10 border-t-2 border-red-500">
             <div className="flex items-center justify-center h-full">
               <span className="text-red-500 font-bold text-sm bg-black/50 px-3 py-1 rounded">
@@ -98,14 +91,13 @@ export default function Header() {
         </div>
       )}
 
-      {/* Toggle Button */}
-      <button
+      {/* <button
         type="button"
         onClick={() => setShowDebugOverlay(!showDebugOverlay)}
         className="fixed top-4 right-4 z-[60] bg-slate-800 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-slate-700 transition-colors text-sm font-medium"
       >
         {showDebugOverlay ? "Hide" : "Show"} Debug
-      </button>
+      </button> */}
 
       <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24 lg:min-h-screen">
         <div>
