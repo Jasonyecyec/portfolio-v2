@@ -104,12 +104,12 @@ export default function Header() {
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
             <Link href="/">Jason Yecyec</Link>
           </h1>
-          <h2 className="mt-2 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+          <h2 className="mt-2 text-lg font-semibold tracking-tight text-slate-200 sm:text-xl">
             Software Engineer
           </h2>
-          <p className="mt-4 max-w-xs leading-normal text-slate-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-            amet!
+          <p className="mt-4 max-w-xs leading-normal text-slate-400 font-medium">
+            I build modern, scalable web applications with a focus on
+            performance and user experience.
           </p>
 
           <nav className="nav hidden lg:block" aria-label="in-page-jump-links">

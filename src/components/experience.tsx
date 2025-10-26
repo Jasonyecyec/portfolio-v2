@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section id="experience" className="scroll-mt-16 lg:scroll-mt-24">
       <div className="space-y-10">
-        <h2 className="text-lg mb-7 font-bold tracking-wide text-[#00d1c7]">
+        <h2 className="text-base uppercase mb-7 font-bold tracking-wide text-[#00d1c7]">
           Experience
         </h2>
 

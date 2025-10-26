@@ -97,6 +97,7 @@ export const experience = [
     company: "Smart Contents Co., Ltd.",
     details: [
       "Build client-facing and internal web applications, ensuring responsive and efficient UI/UX.",
+      "Adapted quickly to backend technologies like FastAPI, delivering key API integrations and backend features.",
       "Collaborated closely with developers and cross-functional teams to ensure seamless API integration and on-time feature delivery.",
     ],
     technologies: [
@@ -154,5 +155,20 @@ export const skills = [
   {
     name: "AWS",
     icon: <FaAws />,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <FaAws />,
+  },
+];
+
+export const projects = [
+  {
+    name: "The Good Neighborhood Cards (TGNC)",
+    description:
+      "loremx3 ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat atque quasi fugiat hic provident explicabo fugit ullam beatae, illo vero aliquid amet nostrum quis nulla enim illum odio id.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    imageUrl: "/images/tgnc.png",
+    projectUrl: "https://www.tgnc.jp/",
   },
 ];

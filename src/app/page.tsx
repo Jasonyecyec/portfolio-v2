@@ -2,6 +2,8 @@ import Header from "@/components/header";
 import CursorSpotlight from "@/components/cursor-spotlight";
 import Experience from "@/components/experience";
 import Skills from "@/components/skills";
+import Link from "next/link";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -31,7 +33,8 @@ export default function Home() {
 
             <Experience />
 
-            <section id="projects" className="scroll-mt-16 lg:scroll-mt-24">
+            <Projects />
+            {/* <section id="projects" className="scroll-mt-16 lg:scroll-mt-24">
               <div className="space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-widest text-[#00d1c7]">
                   Projects
@@ -97,7 +100,7 @@ export default function Home() {
                   sapiente molestiae ea nihil!
                 </p>
               </div>
-            </section>
+            </section> */}
 
             <section id="contact" className="scroll-mt-16 lg:scroll-mt-24">
               <div className="space-y-4">
@@ -181,6 +184,44 @@ export default function Home() {
                 </p>
               </div>
             </section>
+
+            <footer className="max-w-md pb-16 text-sm text-slate-400 sm:pb-0 font-medium">
+              <p>
+                Built with{" "}
+                <Link
+                  href="https://nextjs.org/"
+                  className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Next.js (opens in a new tab)"
+                >
+                  Next.js
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="https://tailwindcss.com/"
+                  className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Tailwind CSS (opens in a new tab)"
+                >
+                  Tailwind CSS
+                </Link>
+                , deployed with{" "}
+                <Link
+                  href="https://vercel.com/"
+                  className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Vercel (opens in a new tab)"
+                >
+                  Vercel .
+                </Link>
+                <br />© {new Date().getFullYear()}{" "}
+                <span className="text-slate-200"> Jason Yecyec</span> . All
+                rights reserved.
+              </p>
+            </footer>
           </main>
         </div>
       </div>
