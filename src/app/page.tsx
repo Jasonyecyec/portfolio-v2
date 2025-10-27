@@ -4,6 +4,7 @@ import Experience from "@/components/experience";
 import Skills from "@/components/skills";
 import Link from "next/link";
 import Projects from "@/components/projects";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -34,75 +35,9 @@ export default function Home() {
             <Experience />
 
             <Projects />
-            {/* <section id="projects" className="scroll-mt-16 lg:scroll-mt-24">
-              <div className="space-y-4">
-                <h2 className="text-sm font-bold uppercase tracking-widest text-[#00d1c7]">
-                  Projects
-                </h2>
-                <p className="text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque ipsa fugiat, esse dolor quibusdam ad officia ab,
-                  nisi praesentium officiis, nihil nobis autem laudantium eius
-                  repellendus.
-                </p>
+            <Contact />
 
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <p className="text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque ipsa fugiat, esse dolor quibusdam ad officia ab,
-                  nisi praesentium officiis, nihil nobis autem laudantium eius
-                  repellendus.
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <p className="text-slate-300">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque ipsa fugiat, esse dolor quibusdam ad officia ab,
-                  nisi praesentium officiis, nihil nobis autem laudantium eius
-                  repellendus.
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-
-                <p className="text-slate-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  corrupti saepe, beatae voluptatibus dignissimos eveniet optio
-                  sapiente molestiae ea nihil!
-                </p>
-              </div>
-            </section> */}
-
-            <section id="contact" className="scroll-mt-16 lg:scroll-mt-24">
+            {/* <section id="contact" className="scroll-mt-16 lg:scroll-mt-24">
               <div className="space-y-4">
                 <h2 className="text-sm font-bold uppercase tracking-widest text-[#00d1c7]">
                   Contact
@@ -183,7 +118,7 @@ export default function Home() {
                   sapiente molestiae ea nihil!
                 </p>
               </div>
-            </section>
+            </section> */}
 
             <footer className="max-w-md pb-16 text-sm text-slate-400 sm:pb-0 font-medium">
               <p>
