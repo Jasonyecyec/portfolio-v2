@@ -86,7 +86,7 @@ export default function Contact() {
       const response = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
-        data,
+        { ...data, sender_ip: verifyData.sender_ip },
         emailOptions,
       );
 

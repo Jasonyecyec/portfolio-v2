@@ -1,3 +1,4 @@
+import { send } from "@emailjs/browser";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
@@ -20,6 +21,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Get IP address from request headers
+    const ip =
+      request.headers.get("x-forwarded-for")?.split(",")[0] ||
+      request.headers.get("x-real-ip") ||
+      "IP not available";
+
     // Verify token with Google reCAPTCHA API
     const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}`;
 
@@ -36,6 +43,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({
         success: true,
         score: recaptchaData.score,
+        sender_ip: ip || null,
       });
     }
 
