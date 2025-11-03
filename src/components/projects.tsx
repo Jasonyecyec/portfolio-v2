@@ -26,14 +26,14 @@ export default function Projects() {
               <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition  motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
 
               {/* Project Image */}
-              <div className="order-2 lg:order-1 col-span-8 lg:col-span-2 relative z-10">
+              <div className="order-2 md:order-1 col-span-8 md:col-span-2 relative z-10">
                 <div className="aspect-video object-cover rounded border-1 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1 bg-slate-500 relative">
                   <Image alt={item.name} src={item.imageUrl} fill />
                 </div>
               </div>
 
               {/* Project Details */}
-              <div className="order-1 lg:order-2 col-span-8 lg:col-span-6 relative z-10 space-y-3">
+              <div className="order-1 md:order-2 col-span-8 md:col-span-6 relative z-10 space-y-3">
                 <h3 className="text-md group-hover:text-[#00d1c7] inline-flex items-baseline font-semibold leading-tight text-slate-200 focus-visible:text-teal-300 group/link">
                   {item.name}
                 </h3>
