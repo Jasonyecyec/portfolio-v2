@@ -15,15 +15,15 @@ export default function Experience() {
             className="grid grid-cols-8 gap-3 group relative  pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-5 lg:hover:!opacity-100 lg:group-hover:opacity-50"
           >
             <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition  motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-            <div className="lg:col-span-2 relative z-10">
+            <div className="col-span-8 lg:col-span-2 relative z-10">
               <p className="text-xs font-semibold uppercase text-slate-500 mt-0.5">
                 {item.date}
               </p>
             </div>
 
-            <div className="lg:col-span-6 relative z-10 space-y-3">
-              <h3 className="text-md group-hover:text-[#00d1c7] inline-flex items-baseline font-semibold leading-tight text-slate-200 focus-visible:text-teal-300 group/link">
-                {item.position} ·{" "}
+            <div className="col-span-8 lg:col-span-6 relative z-10 space-y-3">
+              <h3 className="text-md group-hover:text-[#00d1c7] flex flex-wrap items-baseline font-semibold leading-tight text-slate-200 focus-visible:text-teal-300 group/link">
+                {item.position} ·
                 <span className="text-base ml-1 text-slate-300 group-hover:text-[#00d1c7] ">
                   {item.company}
                 </span>
