@@ -8,14 +8,18 @@ export default function Skills() {
           Skills
         </h2>
         <ul className="mt-2 flex flex-wrap gap-2 text-sm" aria-label="skills">
-          {skills.map((skill, index) => (
-            <li key={index}>
-              <div className="bg-teal-400/10 text-slate-300 gap-1.5 rounded-full flex items-center font-medium leading-5 px-3 py-1">
-                {skill.icon}
-                {skill.name}
-              </div>
-            </li>
-          ))}
+          {skills.map((skill, index) =>
+            skill.name === "break" ? (
+              <div key={`break-${index}`} className="basis-full h-0" />
+            ) : (
+              <li key={skill.name}>
+                <div className="bg-teal-400/10 text-slate-300 gap-1.5 rounded-full flex items-center font-medium leading-5 px-3 py-1">
+                  {skill.icon}
+                  {skill.name}
+                </div>
+              </li>
+            ),
+          )}
         </ul>
       </div>
     </section>

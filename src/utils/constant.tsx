@@ -6,6 +6,14 @@ import { GrMysql } from "react-icons/gr";
 import { FaDocker } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { FaAws } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaPhp } from "react-icons/fa";
+import { PiFileCSharpFill } from "react-icons/pi";
+import { PiFileSql } from "react-icons/pi";
+import { AiOutlineDotNet } from "react-icons/ai";
+import { AiFillApi } from "react-icons/ai";
+import { FaDigitalOcean } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export const navLinks = [
   { name: "About", href: "#about" },
@@ -96,7 +104,7 @@ export const experience = [
     position: "Software Engineer",
     company: "Smart Contents Co., Ltd.",
     details: [
-      "Build client-facing and internal web applications, ensuring responsive and efficient UI/UX.",
+      "Lead development of client-facing and internal web applications, ensuring responsive and efficient UI/UX.",
       "Adapted quickly to backend technologies like FastAPI, delivering key API integrations and backend features.",
       "Collaborated closely with developers and cross-functional teams to ensure seamless API integration and on-time feature delivery.",
     ],
@@ -125,8 +133,28 @@ export const experience = [
 
 export const skills = [
   {
+    name: "JavaScript",
+    icon: <IoLogoJavascript />,
+  },
+  {
     name: "TypeScript",
     icon: <SiTypescript />,
+  },
+  {
+    name: "PHP",
+    icon: <FaPhp />,
+  },
+  {
+    name: "SQL",
+    icon: <PiFileSql />,
+  },
+  {
+    name: "C#",
+    icon: <PiFileCSharpFill />,
+  },
+  {
+    name: "break",
+    icon: null,
   },
   {
     name: "React",
@@ -137,8 +165,20 @@ export const skills = [
     icon: <RiNextjsFill />,
   },
   {
+    name: "Tailwind CSS",
+    icon: <RiTailwindCssFill />,
+  },
+  {
     name: "Laravel",
     icon: <FaLaravel />,
+  },
+  {
+    name: "ASP.NET",
+    icon: <AiOutlineDotNet />,
+  },
+  {
+    name: "break",
+    icon: null,
   },
   {
     name: "MySQL",
@@ -157,8 +197,12 @@ export const skills = [
     icon: <FaAws />,
   },
   {
-    name: "Tailwind CSS",
-    icon: <FaAws />,
+    name: "DigitalOcean",
+    icon: <FaDigitalOcean />,
+  },
+  {
+    name: "REST API",
+    icon: <AiFillApi />,
   },
 ];
 
@@ -166,9 +210,43 @@ export const projects = [
   {
     name: "The Good Neighborhood Cards (TGNC)",
     description:
-      "loremx3 ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat atque quasi fugiat hic provident explicabo fugit ullam beatae, illo vero aliquid amet nostrum quis nulla enim illum odio id.",
+      "A Smart Contents Co., Ltd. client project - a car inventory management and display system for The Good Neighbor Cars with a modern, user-friendly interface.",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     imageUrl: "/images/tgnc.png",
     projectUrl: "https://www.tgnc.jp/",
+  },
+  {
+    name: "Poster AI",
+    description:
+      "A Smart Contents Co., Ltd. client project - an AI-powered poster generation tool for pachinko machines with automated image creation and customization.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    imageUrl: "/images/poster-ai.png",
+    projectUrl: "#",
+  },
+  {
+    name: "Recruitment Global",
+    description:
+      "A global recruitment management system for efficient hiring and candidate tracking.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "C#",
+      "Tailwind CSS",
+      "ASP.NET Core Web API",
+      "Open AI",
+      "MySQL",
+      "AWS",
+    ],
+    imageUrl: "/images/global-recruitment.png",
+    projectUrl: "https://www.globalrecruitment.site",
+  },
+  {
+    name: "QCU-FMS (Facility Management System)",
+    description:
+      "A comprehensive system designed to simplify issue reporting, event requests, and service management for Quezon City University. ",
+    imageUrl: "/images/qcu-fms.png",
+    technologies: ["React.js", "Laravel", "Tailwind CSS", "MySQL", "Open AI"],
+    projectUrl: "https://qcu-fms-admin.vercel.app",
   },
 ];
