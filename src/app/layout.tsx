@@ -31,6 +31,23 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        <iframe
+          src="http://localhost:3000/widget?chatbot_id=019a354c-e98e-7272-a94e-3801b8324509"
+          style={{
+            position: "fixed",
+            bottom: 20,
+            right: 20,
+            width: 400,
+            height: 600,
+            border: "none",
+            borderRadius: 12,
+            backgroundColor: "transparent",
+            zIndex: 9999,
+          }}
+          allow="clipboard-write"
+          title="BizChat Support Widget"
+        ></iframe>
       </body>
     </html>
   );
