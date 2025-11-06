@@ -33,7 +33,7 @@ export default function RootLayout({
         {children}
 
         <iframe
-          src="http://localhost:3000/widget?chatbot_id=019a354c-e98e-7272-a94e-3801b8324509"
+          src="https://smartchat-ai.smartcontents.co.jp/widget?chatbot_id=019a354c-e98e-7272-a94e-3801b8324509"
           style={{
             position: "fixed",
             bottom: 20,
