@@ -6,11 +6,13 @@ import Link from "next/link";
 import Projects from "@/components/projects";
 import Contact from "@/components/contact";
 import { RecaptchaProvider } from "@/providers/RecaptchaProvider";
+import SnowfallWrapper from "@/components/snowfall-wrapper";
 
 export default function Home() {
   return (
     <>
       <CursorSpotlight />
+      <SnowfallWrapper />
 
       <div className="min-h-screen mx-auto max-w-screen-xl px-6 py-12 md:px-12 py-1.2 md:py-16 lg:py-0 font-sans relative">
         <div className="lg:flex lg:justify-between gap-4">
