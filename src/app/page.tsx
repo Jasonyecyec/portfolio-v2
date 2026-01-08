@@ -7,38 +7,10 @@ import Projects from "@/components/projects";
 import Contact from "@/components/contact";
 import { RecaptchaProvider } from "@/providers/RecaptchaProvider";
 import SnowfallWrapper from "@/components/snowfall-wrapper";
-import Script from "next/script";
+
 export default function Home() {
   return (
     <>
-      <Script id="SmartChat-widget" strategy="lazyOnload">
-        {`
-    (function(){
-      var i=document.createElement('iframe');
-      i.id='smartchat-widget-iframe';
-      i.src='https://smartchat-ai.smartcontents.co.jp/widget?chatbot_id=019ab9d3-2da1-7060-85a2-058f8eef0a10';
-      i.allow='clipboard-write';
-      i.title='SmartChat Support Widget';
-      i.style.cssText='position:fixed;bottom:20px;right:24px; width:64px;height:64px;border:none;border-radius:100%;background-color:transparent;z-index:9999;overflow:hidden';
-      document.body.appendChild(i);
-      window.addEventListener('message',function(e){
-        if(e.origin!=='https://smartchat-ai.smartcontents.co.jp')return;
-        if(e.data.type==='BIZCHAT_WIDGET_OPENED'){
-          i.style.width='420px';
-          i.style.height='650px';
-          i.style.borderRadius='12px';
-          i.style.bottom='80px';
-        }else if(e.data.type==='BIZCHAT_WIDGET_CLOSED'){
-          i.style.width='64px';
-          i.style.height='64px';
-          i.style.borderRadius='100%';
-          i.style.bottom='24px';
-        }
-      });
-    })();
-  `}
-      </Script>
-
       <CursorSpotlight />
       <SnowfallWrapper />
       <div className="min-h-screen mx-auto max-w-screen-xl px-6 py-12 md:px-12 py-1.2 md:py-16 lg:py-0 font-sans relative">
