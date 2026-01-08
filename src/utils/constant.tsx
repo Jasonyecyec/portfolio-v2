@@ -104,7 +104,7 @@ export const experience = [
     position: "Software Engineer",
     company: "Smart Contents Co., Ltd.",
     details: [
-      "Lead development of client-facing and internal web applications, ensuring responsive and efficient UI/UX.",
+      "Lead development of client-facing and product web applications, ensuring responsive and efficient UI/UX.",
       "Adapted quickly to backend technologies like FastAPI, delivering key API integrations and backend features.",
       "Collaborated closely with developers and cross-functional teams to ensure seamless API integration and on-time feature delivery.",
     ],
@@ -215,14 +215,16 @@ export const projects = [
     imageUrl: "/images/tgnc.png",
     projectUrl: "https://www.tgnc.jp/",
   },
+
   {
-    name: "Poster AI",
+    name: "Smart Chat AI",
     description:
-      "A Smart Contents Co., Ltd. client project - an AI-powered poster generation tool for pachinko machines with automated image creation and customization.",
+      "A Smart Contents Co., Ltd. product that automates customer support 24/7/365 using AI. This business chat solution simultaneously improves operational efficiency and customer satisfaction.",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    imageUrl: "/images/poster-ai.png",
-    projectUrl: "#",
+    imageUrl: "/images/smartchat-ai.png",
+    projectUrl: "https://smartchat-ai.smartcontents.co.jp/ja",
   },
+
   {
     name: "Recruitment Global",
     description:
@@ -240,6 +242,22 @@ export const projects = [
     ],
     imageUrl: "/images/global-recruitment.png",
     projectUrl: "https://www.globalrecruitment.site",
+  },
+  {
+    name: "Rental Car (THP Noble Cars)",
+    description:
+      "A Smart Contents Co., Ltd. client project - a car rental service platform for THP Noble Cars, featuring a seamless booking system and user-friendly interface.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    imageUrl: "/images/rental-car.png",
+    projectUrl: "https://thp-rental-car.vercel.app/",
+  },
+  {
+    name: "Poster AI",
+    description:
+      "A Smart Contents Co., Ltd. client project - an AI-powered poster generation tool for pachinko machines with automated image creation and customization.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    imageUrl: "/images/poster-ai.png",
+    projectUrl: "#",
   },
   {
     name: "QCU-FMS (Facility Management System)",

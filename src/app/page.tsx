@@ -24,7 +24,7 @@ export default function Home() {
                   About
                 </h2>
                 <p className="text-slate-400 font-medium tracking-normal leading-relaxed">
-                  Experienced Software Developer with a proven ability to lead
+                  Experienced Software Developer wklith a proven ability to lead
                   development projects and collaborate effectively within a
                   team. Eager to contribute and grow in a dynamic environment,
                   continuously learning and mastering new technologies.
