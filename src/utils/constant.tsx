@@ -208,7 +208,7 @@ export const skills = [
 
 export const projects = [
   {
-    name: "The Good Neighborhood Cards (TGNC)",
+    name: "The Good Neighborhood Cars (TGNC)",
     description:
       "A Smart Contents Co., Ltd. client project - a car inventory management and display system for The Good Neighbor Cars with a modern, user-friendly interface.",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
