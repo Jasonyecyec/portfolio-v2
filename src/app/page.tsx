@@ -19,7 +19,7 @@ export default function Home() {
       i.src='https://smartchat-ai.smartcontents.co.jp/widget?chatbot_id=019ab9d3-2da1-7060-85a2-058f8eef0a10';
       i.allow='clipboard-write';
       i.title='SmartChat Support Widget';
-      i.style.cssText='position:fixed;bottom:20px;right:24px;width:64px;height:64px;border:none;border-radius:100%;background-color:transparent;z-index:9999;overflow:hidden';
+      i.style.cssText='position:fixed;bottom:20px;right:24px; width:64px;height:64px;border:none;border-radius:100%;background-color:transparent;z-index:9999;overflow:hidden';
       document.body.appendChild(i);
       window.addEventListener('message',function(e){
         if(e.origin!=='https://smartchat-ai.smartcontents.co.jp')return;
