@@ -222,7 +222,7 @@ export const projects = [
       "A Smart Contents Co., Ltd. product that automates customer support 24/7/365 using AI. This business chat solution simultaneously improves operational efficiency and customer satisfaction.",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     imageUrl: "/images/smartchat-ai.png",
-    projectUrl: "https://smartchat-ai.smartcontents.co.jp/ja",
+    projectUrl: "https://dev.bizchat-ai.com/en",
   },
 
   {
@@ -255,9 +255,24 @@ export const projects = [
     name: "Poster AI",
     description:
       "A Smart Contents Co., Ltd. client project - an AI-powered poster generation tool for pachinko machines with automated image creation and customization.",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    technologies: [
+      "Next.js",
+      "Fast API",
+      "Python",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
     imageUrl: "/images/poster-ai.png",
     projectUrl: "#",
+  },
+  {
+    name: "Jinzai Subsidy",
+    description:
+      "Smart Contents Co., Ltd. - landing page for a government subsidy consulting service that helps companies access training subsidies for employee reskilling in AI and DX.",
+    technologies: ["Next.js", "Python", "React", "TypeScript", "Tailwind CSS"],
+    imageUrl: "/images/jinzai-subsidy.png",
+    projectUrl: "https://jinzai-subsidy-lp.vercel.app/",
   },
   {
     name: "QCU-FMS (Facility Management System)",

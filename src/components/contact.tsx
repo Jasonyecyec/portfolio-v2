@@ -30,6 +30,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const form = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
+    mode: "onChange",
     defaultValues: {
       user_name: "",
       user_email: "",
@@ -39,16 +40,13 @@ export default function Contact() {
 
   const emailOptions = {
     publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-    // Do not allow headless browsers
     blockHeadless: true,
     blockList: {
       list: ["gago", "spam", "test"],
-      // The variable contains the user's name
       watchVariable: "user_name",
     },
     limitRate: {
       id: "portfolio-contact-form",
-      // Allow 1 request per 10s
       throttle: 10000,
     },
   };
@@ -174,7 +172,7 @@ export default function Contact() {
             <Button
               type="submit"
               disabled={isSubmitting || !form.formState.isValid}
-              className="cursor-pointer bg-slate-400 text-foreground hover:bg-[#00d1c7] hover:cursor-pointer w-32"
+              className="cursor-pointer bg-[#00d1c7] text-foreground hover:bg-[#00d1c7]/90 transition-colors hover:cursor-pointer w-32"
             >
               {isSubmitting ? "Sending..." : "  Send Message"}
             </Button>
