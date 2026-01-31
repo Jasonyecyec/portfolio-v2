@@ -269,8 +269,8 @@ export const projects = [
   {
     name: "Jinzai Subsidy",
     description:
-      "Smart Contents Co., Ltd. - landing page for a government subsidy consulting service that helps companies access training subsidies for employee reskilling in AI and DX.",
-    technologies: ["Next.js", "Python", "React", "TypeScript", "Tailwind CSS"],
+      "Smart Contents Co., Ltd. - ~landing page for a government subsidy consulting service that helps companies access training subsidies for employee reskilling in AI and DX.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     imageUrl: "/images/jinzai-subsidy.png",
     projectUrl: "https://jinzai-subsidy-lp.vercel.app/",
   },
